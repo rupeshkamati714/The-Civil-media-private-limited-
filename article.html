@@ -1,0 +1,11 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta id="desc" name="description" content="The Civil Media article"><title>The Civil Media</title><link rel="stylesheet" href="style.css"></head><body>
+<header><div class="top">THE CIVIL MEDIA • BHAKTAPUR, NEPAL</div><div class="mast wrap"><a href="/"><img src="assets/logo.jpeg" alt=""></a><div><h1>THE CIVIL MEDIA</h1><p>PRIVATE LIMITED</p></div><a class="home" href="/">HOME</a></div></header>
+<main class="wrap article" id="article">Loading...</main><footer><div class="wrap">© 2026 The Civil Media Private Limited</div></footer>
+<script>
+function esc(s){return String(s||"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
+const slug=decodeURIComponent(location.pathname.split("/").pop());
+fetch("/api/articles/"+encodeURIComponent(slug)).then(r=>r.json()).then(a=>{
+document.title=a.title_en+" | The Civil Media";document.getElementById("desc").content=a.summary_en;
+document.getElementById("article").innerHTML=`<small>${esc(a.category)} • ${new Date(a.published_at||a.created_at).toLocaleString()}</small><h1>${esc(a.title_en)}</h1>${a.image?`<img class="article-img" src="${esc(a.image)}">`:""}<p class="summary">${esc(a.summary_en)}</p><div class="article-content">${esc(a.content_en).replace(/\\n/g,"<br><br>")}</div><p><b>By ${esc(a.author)}</b></p>`;
+}).catch(()=>document.getElementById("article").innerHTML="<h1>Article not found</h1>");
+</script></body></html>

@@ -1,0 +1,24 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="The Civil Media Private Limited — responsible journalism from Nepal and beyond.">
+<meta property="og:title" content="The Civil Media Private Limited"><meta property="og:type" content="website">
+<title>The Civil Media | Private Limited</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header><div class="top"><div class="wrap"><span>THE CIVIL MEDIA</span><span>Bhaktapur, Nepal</span></div></div>
+<div class="mast wrap"><a href="/"><img src="assets/logo.jpeg" alt="The Civil Media logo"></a><div><h1>THE CIVIL MEDIA</h1><p>PRIVATE LIMITED</p><small>TRUTH • PEOPLE • ACCOUNTABILITY</small></div><div class="tools"><button onclick="toggleLanguage()" id="language">नेपाली</button><a href="/admin">Admin</a></div></div>
+<nav><div class="wrap navin"><a href="/">Home</a><a href="#latest">Latest</a><a href="#nepal">Nepal</a><a href="#politics">Politics</a><a href="#business">Business</a><a href="#world">World</a><a href="#sports">Sports</a><a href="#entertainment">Entertainment</a><a href="#technology">Technology</a><a href="#opinion">Opinion</a></div></nav>
+<div class="breaking"><b>BREAKING</b><span id="ticker">Loading...</span></div></header>
+<main>
+<section class="wrap hero"><div id="featured"></div><aside><div class="asidehead"><h2>Latest News</h2></div><div id="side"></div></aside></section>
+<section class="wrap section" id="latest"><div class="head"><div><small>LATEST</small><h2>Latest Stories</h2></div><input id="search" placeholder="Search news..." oninput="render()"></div><div id="grid" class="grid"></div></section>
+<section class="band" id="nepal"><div class="wrap"><div class="head"><div><small>NATIONAL</small><h2>Nepal</h2></div></div><div id="NepalGrid" class="grid"></div></div></section>
+<section class="wrap section" id="politics"><div class="head"><div><small>CURRENT AFFAIRS</small><h2>Politics</h2></div></div><div id="PoliticsGrid" class="grid"></div></section>
+<section class="dark section" id="business"><div class="wrap"><div class="head"><div><small>ECONOMY</small><h2>Business</h2></div></div><div id="BusinessGrid" class="grid"></div></div></section>
+<section class="wrap section" id="world"><div class="head"><div><small>GLOBAL</small><h2>World</h2></div></div><div id="WorldGrid" class="grid"></div></section>
+<section class="wrap section" id="sports"><div class="head"><div><small>SPORTS</small><h2>Sports</h2></div></div><div id="SportsGrid" class="grid"></div></section>
+<section class="band" id="entertainment"><div class="wrap"><div class="head"><div><small>CULTURE</small><h2>Entertainment</h2></div></div><div id="EntertainmentGrid" class="grid"></div></div></section>
+<section class="wrap section" id="technology"><div class="head"><div><small>DIGITAL FUTURE</small><h2>Technology</h2></div></div><div id="TechnologyGrid" class="grid"></div></section>
+<section class="wrap subscribe" id="opinion"><div><small>THE CIVIL MEDIA</small><h2>Get important stories in your inbox</h2><p>Connect this form to your email provider before launch.</p></div><form onsubmit="subscribe(event)"><input type="email" required placeholder="Email address"><button>Subscribe</button></form></section>
+</main>
+<footer><div class="wrap footer"><div><img src="assets/logo.jpeg" alt=""><h3>The Civil Media Private Limited</h3><p>Bhaktapur, Nepal</p><p>Truth • People • Accountability</p></div><div><h4>Sections</h4><a href="#nepal">Nepal</a><a href="#politics">Politics</a><a href="#business">Business</a><a href="#world">World</a></div><div><h4>Company</h4><a>About Us</a><a>Editorial Policy</a><a>Privacy Policy</a><a>Contact</a></div><div><h4>Connect</h4><p id="contact"></p><p id="social"></p></div></div><div class="copy">© 2026 The Civil Media Private Limited. All rights reserved.</div></footer>
+<script src="app.js"></script></body></html>
